@@ -12,8 +12,8 @@ app.use(bodyParser.json());
 app.use(express.static('public')); // Раздаём статические файлы
 
 // Конфигурация Telegram бота
-const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || 'ВАШ_ТОКЕН_БОТА';
-const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || 'ВАШ_CHAT_ID';
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '8372456001:AAHuufc1A4f3szneC5TbgFDOs8krbsNHEMk';
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '1665167511';
 
 // Маршрут для отправки данных в Telegram
 app.post('/send-feedback', async (req, res) => {

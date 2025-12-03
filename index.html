@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1><i class="fas fa-comment-dots"></i> Обратная связь</h1>
+            <p class="subtitle">Напишите нам, и мы ответим в ближайшее время</p>
+            
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Имя *</label>
+                    <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone"><i class="fas fa-phone"></i> Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-edit"></i> Сообщение *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Опишите вашу проблему или вопрос..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="category"><i class="fas fa-tag"></i> Категория</label>
+                    <select id="category" name="category">
+                        <option value="general">Общий вопрос</option>
+                        <option value="technical">Техническая проблема</option>
+                        <option value="support">Поддержка</option>
+                        <option value="suggestion">Предложение</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Я согласен на обработку персональных данных</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Отправить сообщение
+                </button>
+            </form>
+            
+            <div id="statusMessage" class="status-message"></div>
+        </div>
+        
+        <div class="info-panel">
+            <h2><i class="fas fa-info-circle"></i> Как это работает?</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Заполните форму справа</li>
+                <li><i class="fas fa-robot"></i> Ваше сообщение отправится в Telegram-бот</li>
+                <li><i class="fas fa-headset"></i> Наш специалист ответит вам в течение 24 часов</li>
+                <li><i class="fas fa-shield-alt"></i> Ваши данные защищены</li>
+            </ul>
+            
+            <div class="contact-info">
+                <h3><i class="fas fa-phone-alt"></i> Контакты</h3>
+                <p><i class="fas fa-clock"></i> Время работы: Пн-Пт, 9:00-18:00</p>
+                <p><i class="fas fa-envelope-open-text"></i> Email: support@example.com</p>
+                <p><i class="fab fa-telegram"></i> Telegram: @our_support_bot</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

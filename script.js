@@ -29,7 +29,7 @@ document.getElementById('feedbackForm').addEventListener('submit', async functio
     
     try {
         // Отправляем данные на сервер
-        const response = await fetch('/send-feedback', {
+        const response = await fetch('/8372456001:AAHuufc1A4f3szneC5TbgFDOs8krbsNHEMk/send-feedback', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
